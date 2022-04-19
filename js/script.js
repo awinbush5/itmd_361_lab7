@@ -1,13 +1,18 @@
 function init(){
-	
-	function yysEventFunction(){
-		var text =document.getElementById("entryinput");
-		var text2 =document.getElementById("textoutput");
-		alert("Seth Hall:" + text1.value);
-	}
-	var entryn=document.getElementById("entrybutton");
-	entryn.addEventListener("click" , yysEventFunction);
+  var input = document.getElementById('entryinput');
+  var button = document.getElementById('entrybutton');
+  var name = document.getElementsByClassName('center')[1];
+  var output = document.getElementById('textoutput');
+
+  function myAlertFunction(){
+    alert(AJ Winbush.textContent + ': ' + input.value);
+  }
+
+  function myOutputFunction(){
+    output.innerHTML = input.value;
+  }
+
+  button.addEventListener('click', myAlertFunction);
+  button.addEventListener('click', myOutputFunction);
 }
-
-window.addEventListener('load', init);
-
+window.addEventListener('load', init
